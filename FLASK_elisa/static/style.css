@@ -1,0 +1,51 @@
+h1
+{	
+	text-align: left;
+	background-color: rgb(18, 189, 160);
+	font-family: Arial,Helvetica,sans-serif;
+	color: rgb(51, 22, 156);
+	border-style: solid;
+  border-color: black;
+}
+
+p
+{
+	font-family: Arial,Helvetica,sans-serif;
+	color: rgb(23, 38, 46);
+	background-color: black;
+}
+
+html
+{	
+	background-color: black;
+	
+}
+
+img
+{
+	border-style: solid;
+	border-color: rgb(50, 179, 108);
+	border-width: 1px;
+}
+
+a
+{	
+	font-family: Arial,Helvetica,sans-serif;
+	color: white;
+	background-color: black;
+
+}
+
+ul
+{
+	font-family: Arial,Helvetica,sans-serif;
+	color: rgb(99, 196, 21);
+	background-color: black;
+}
+
+#u1
+{
+	font-family: Arial,Helvetica,sans-serif;
+	color: white;
+	background-color: black;
+}

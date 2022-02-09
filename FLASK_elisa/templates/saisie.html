@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutoriel Flask: Tests SQL, CSS et formulaire</title>
+		<link rel="stylesheet" href="/static/style.css">
+	</head>
+	<body>
+		<div class="menu">
+			<span class="bouton"><a href='/'><img src="/static/images/bouton_accueil.png"></a></span>
+			<span class="bouton"><a href='/lire'><img src="/static/images/bouton_lecture.png"></a></span>
+			<span class="bouton"><a href='/chercher'><img src="/static/images/bouton_recherche.png"></a></span>
+			<span class="bouton"><a href='/saisir'><img src="/static/images/bouton_saisie.png"></a></span>
+		</div>
+		<div class="corps">
+			<h1>Ajouter un labo</h1>
+			<p>Renseignez tous les champs suivants:</p>
+			<form action="/saisir" method="post">
+						<label>id</label> : <input type= int("text") name="id" />
+						<label>Nom</label> : <input type="text" name="Nom" />
+						<label>nombre_abos</label> : <input type=int("text") name="nombre_abos" />
+						<label>singles</label> : <input type="text" name="singles" />
+						<label>singles2</label> : <input type= "text" name="singles2" />
+						<input type="submit" value="Envoyer" />
+				</form>	
+		</div>
+	</body>
+</html>
+		

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutoriel Flask: Tests SQL, CSS et formulaire</title>
+		<link rel="stylesheet" href="/static/style.css">
+	</head>
+	<body>
+		<div class="menu">
+			<span class="bouton"><a href='/'><img src="/static/images/bouton_accueil.png"></a></span>
+			<span class="bouton"><a href='/lire'><img src="/static/images/bouton_lecture.png"></a></span>
+			<span class="bouton"><a href='/chercher'><img src="/static/images/bouton_recherche.png"></a></span>
+			<span class="bouton"><a href='/saisir'><img src="/static/images/bouton_saisie.png"></a></span>
+		</div>
+		<h1>Contenu de la base</h1>
+		<div class="corps">
+			<ul>
+			{% for artiste in artistes %}
+				<li>id={{ artiste[0] }}, Nom ={{ artiste[1] }}, nombre_abos={{ artiste[2] }}, singles={{ artiste[3] }, singles2={{ artiste[4] }}</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</body>
+</html>
+		

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutoriel Flask: Tests SQL, CSS et formulaire</title>
+		<link rel="stylesheet" href="/static/style.css">
+	</head>
+	<body>
+		<div class="menu">
+			<span class="bouton"><a href='/'><img src="/static/images/bouton_accueil.png"></a></span>
+			<span class="bouton"><a href='/lire'><img src="/static/images/bouton_lecture.png"></a></span>
+			<span class="bouton"><a href='/chercher'><img src="/static/images/bouton_recherche.png"></a></span>
+			<span class="bouton"><a href='/saisir'><img src="/static/images/bouton_saisie.png"></a></span>
+		</div>
+		<div class="corps">
+			<h1>Résultat de la recherche</h1>
+				<p>Recherche effectuée à partir des critères suivants:</p>
+				{% if id %}
+					<p>id:{{id}}</p>
+				{% else %} 
+					<p>id: / </p>
+				{% endif %} 
+				{% if  %}
+					<p>Nom:{{Nom}}</p>
+				{% else %} 
+					<p>Nom: / </p>
+				{% endif %} 
+				{% if nombre_abos %}
+					<p>nombre_abos:{{nombre_abos}}</p>
+				{% else %} 
+					<p>nombre_abos: / </p>
+				{% endif %}
+				{% if singles %}
+					<p>singles:{{singles}}</p>
+				{% else %} 
+					<p>singles: / </p>
+				{% endif %}
+				{% if singles2 %}
+					<p>singles2:{{singles2}}</p>
+				{% else %} 
+					<p>singles2: / </p>
+				{% endif %} 
+				<p>Voila ce que j'ai trouvé</p>
+				<ul>
+				{% for artiste in liste_artistes %}
+					<li>id={{ labo[0] }}, Nom={{ labo[1] }}, nombre_abos={{ labo[2] }}, singles={{ labo[3] }}, singles2={{ labo[4] }}</li>
+				{% endfor %}
+				</ul>
+		</div>
+	</body>
+</html>
+		
